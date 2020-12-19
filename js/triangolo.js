@@ -1,21 +1,60 @@
 ﻿var calcolaClassificaRun = false;
 
 var matchs = [];
-matchs[101] = {"turno" : 1, "girone":1, "nome":"triangolo-doc-n-1", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[102] = {"turno" : 1, "girone":2, "nome":"triangolo-doc-n-2", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[103] = {"turno" : 1, "girone":3, "nome":"triangolo-doc-n-3", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[104] = {"turno" : 1, "girone":4, "nome":"triangolo-doc-n-4", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[105] = {"turno" : 1, "girone":5, "nome":"triangolo-doc-n-5", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[106] = {"turno" : 1, "girone":6, "nome":"triangolo-doc-n-6", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[107] = {"turno" : 1, "girone":7, "nome":"triangolo-doc-n-7", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[108] = {"turno" : 1, "girone":8, "nome":"triangolo-doc-n-8", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[109] = {"turno" : 1, "girone":9, "nome":"triangolo-doc-n-9", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[110] = {"turno" : 1, "girone":10, "nome":"triangolo-doc-n-10", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[101] = {"turno" : 1, "girone":1, "nome":"triangolo-doc-n-1", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[102] = {"turno" : 1, "girone":2, "nome":"triangolo-doc-n-2", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[103] = {"turno" : 1, "girone":3, "nome":"triangolo-doc-n-3", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[104] = {"turno" : 1, "girone":4, "nome":"triangolo-doc-n-4", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[105] = {"turno" : 1, "girone":5, "nome":"triangolo-doc-n-5", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[106] = {"turno" : 1, "girone":6, "nome":"triangolo-doc-n-6", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[107] = {"turno" : 1, "girone":7, "nome":"triangolo-doc-n-7", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[108] = {"turno" : 1, "girone":8, "nome":"triangolo-doc-n-8", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[109] = {"turno" : 1, "girone":9, "nome":"triangolo-doc-n-9", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[110] = {"turno" : 1, "girone":10, "nome":"triangolo-doc-n-10", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 /**/
+
+//ELO DI INIZIO TORNEO
+//TURNO 1
+matchs[101].elo["revruckus"] = 1641;
+matchs[101].elo["dirkflasche"] = 1771;
+matchs[101].elo["azphoenix"] = 1819;
+matchs[102].elo["dag_stinner"] = 1853;
+matchs[102].elo["babilonia"] = 1382;
+matchs[102].elo["travellinfan"] = 690;
+matchs[103].elo["michaelgallo"] = 1645;
+matchs[103].elo["harigovinda"] = 1448;
+matchs[103].elo["kmoreteam"] = 1500;
+matchs[104].elo["capfracassa"] = 1746;
+matchs[104].elo["carnea7"] = 1435;
+matchs[104].elo["thejoker2000"] = 1384;
+matchs[105].elo["plasol"] = 1332;
+matchs[105].elo["tulpicanistan"] = 1378;
+matchs[105].elo["abatichs"] = 1252;
+matchs[106].elo["rothmoni"] = 1152;
+matchs[106].elo["leffelover"] = 1419;
+matchs[106].elo["vittobet"] = 1393;
+matchs[107].elo["tarlato"] = 1540;
+matchs[107].elo["sandro2116"] = 1522;
+matchs[107].elo["giampiero111"] = 1452;
+matchs[108].elo["riccardocioli"] = 1915;
+matchs[108].elo["gfiorito85"] = 1586;
+matchs[108].elo["enithith"] = 1303;
+matchs[109].elo["ytoong"] = 1506;
+matchs[109].elo["verolev"] = 1795;
+matchs[109].elo["fulljoker"] = 1725;
+matchs[110].elo["tesctassa"] = 1788;
+matchs[110].elo["il_king"] = 1786;
+matchs[110].elo["fil_fil"] = 1377;
+matchs[111].elo["garmik"] = 1445;
+matchs[111].elo["reflex56"] = 1580;
+matchs[111].elo["themoonlightknight"] = 1409;
+matchs[112].elo["maehard"] = 1868;
+matchs[112].elo["pantheon-67"] = 1693;
+matchs[112].elo["kaspdotcom"] = 1166;
 
 
 var maxGirone = 8;   //E' il numero dei gironi 
@@ -179,15 +218,23 @@ function calcolaPunteggioTurno(tabella, turno)
             eloSpareggio = 3000;
             for (var i in matchs[iMatch].giocatori)
             {
+                var myElo = 0
+                if (matchs[iMatch].elo[i])
+                {
+                   myElo = matchs[iMatch].elo[i];
+                } else {
+                   myElo = giocatori[i].elo;
+                }
+
                 //controllo punti
                 if ((matchs[iMatch].giocatori[i].posizioneGruppo == 0) &&
                      (matchs[iMatch].giocatori[i].punti > max || (matchs[iMatch].giocatori[i].punti == max && giocatori[i].puntiSpareggio > maxSpareggio) ||
-                     (matchs[iMatch].giocatori[i].punti == max && giocatori[i].puntiSpareggio == maxSpareggio && giocatori[i].elo < eloSpareggio)
+                     (matchs[iMatch].giocatori[i].punti == max && giocatori[i].puntiSpareggio == maxSpareggio && myElo < eloSpareggio)
                      )) {
                     username = i;
                     max = matchs[iMatch].giocatori[i].punti;
                     maxSpareggio = matchs[iMatch].giocatori[i].puntiSpareggio;
-                    eloSpareggio = giocatori[i].elo;
+                    eloSpareggio = myElo;
                 }
             }
             if (max > -1) 
@@ -302,6 +349,14 @@ function stampaTurno(myMatch, iMatch, tabella, username)
     if (semaforo == 'verde.png')
         $("#imgCheck"+iMatch).attr("style","dispaly:block");
 
+    //Cerco elo prima del match poi del giocatore
+    var myElo = 0
+    if (matchs[iMatch].elo[username])
+    {
+        myElo = myMatch.elo[username];
+    } else {
+        myElo = giocatori[username].elo;
+    }
 
     //stampo riga    
     tabella.append('<tr class="classifica-giocatori">' +
@@ -315,7 +370,7 @@ function stampaTurno(myMatch, iMatch, tabella, username)
         '    <td width=7px></td>' +
         '    <td><div>' +
         '            <a class="username" href="' + giocatori[username].url + '" target=”_blank”> ' + giocatori[username].displayName + '</a>' +
-        '        </div> <div>  (' + giocatori[username].elo + ') </div>' +
+        '        </div> <div>  (' + myElo + ') </div>' +
         '        </td>' +    
         '    </tr></table>' +
         '</td>' +

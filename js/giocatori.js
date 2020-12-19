@@ -67,10 +67,23 @@ function getAvatarUrl(url)
 function getElo()
 {
     //Cerco l'avatar per tutti i giocatori
-    for (var username in giocatori) {
-        //Cerco avatar
-        getEloUrl('https://api.chess.com/pub/player/' + username + '/stats');
+    var cercaElo = false;
+    for (var iMatch in matchs) {
+        for (var username in matchs[iMatch].giocatori) {
+            //Cerco avatar
+            if (! matchs[iMatch].elo[username])
+            {
+                cercaElo = true;
+                getEloUrl('https://api.chess.com/pub/player/' + username + '/stats');
+            } else {
+                giocatori[username].elo = -1; 
+            }
+        }
     }    
+
+    //Se non c'è nessun elo da cercare calcolo il punteggio
+    if (! cercaElo)
+        calcolaPunteggio();
 }
 
 function getEloUrl(url)
@@ -119,9 +132,14 @@ function creaGiocatore(match, apiUsername) {
     //lo assegno quando lo trovo giocatori[username].elo = 0;
     }
 
+    //Cerco il giocatore
     //Lo creo per il match
-    match.giocatori[username] = {};
-    match.giocatori[username].username = username;
+    //lo username dovrebbe essere presente dalla definizione del match
+    if (!  match.giocatori[username])
+    {
+        match.giocatori[username] = {};
+        match.giocatori[username].username = username;
+    }
 //    match.giocatori[username].match = '';
 //    match.giocatori[username].turno = 0;
     match.giocatori[username].punti = 0;
