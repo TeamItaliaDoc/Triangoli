@@ -15,6 +15,7 @@ matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "elo" : []
 matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 /**/
 
 //ELO DI INIZIO TORNEO
@@ -55,7 +56,9 @@ matchs[111].elo["themoonlightknight"] = 1409;
 matchs[112].elo["maehard"] = 1868;
 matchs[112].elo["pantheon-67"] = 1693;
 matchs[112].elo["kaspdotcom"] = 1166;
-
+matchs[113].elo["Abatichs"] = 1243;
+matchs[113].elo["Warnefrit"] = 1136;
+matchs[113].elo["sundancek"] = 1365;
 
 var maxGirone = 8;   //E' il numero dei gironi 
 
