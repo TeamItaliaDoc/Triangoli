@@ -15,7 +15,7 @@ matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "elo" : []
 matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-15", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
 /**/
 
 //ELO DI INIZIO TORNEO
