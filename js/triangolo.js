@@ -1,21 +1,21 @@
 ﻿var calcolaClassificaRun = false;
 
 var matchs = [];
-matchs[101] = {"turno" : 1, "girone":1, "nome":"triangolo-doc-n-1", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[102] = {"turno" : 1, "girone":2, "nome":"triangolo-doc-n-2", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[103] = {"turno" : 1, "girone":3, "nome":"triangolo-doc-n-3", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[104] = {"turno" : 1, "girone":4, "nome":"triangolo-doc-n-4", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[105] = {"turno" : 1, "girone":5, "nome":"triangolo-doc-n-5", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[106] = {"turno" : 1, "girone":6, "nome":"triangolo-doc-n-6", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[107] = {"turno" : 1, "girone":7, "nome":"triangolo-doc-n-7", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[108] = {"turno" : 1, "girone":8, "nome":"triangolo-doc-n-8", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[109] = {"turno" : 1, "girone":9, "nome":"triangolo-doc-n-9", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[110] = {"turno" : 1, "girone":10, "nome":"triangolo-doc-n-10", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
-matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-15", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, };
+matchs[101] = {"turno" : 1, "girone":1, "nome":"triangolo-doc-n-1", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false};
+matchs[102] = {"turno" : 1, "girone":2, "nome":"triangolo-doc-n-2", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[103] = {"turno" : 1, "girone":3, "nome":"triangolo-doc-n-3", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[104] = {"turno" : 1, "girone":4, "nome":"triangolo-doc-n-4", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[105] = {"turno" : 1, "girone":5, "nome":"triangolo-doc-n-5", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[106] = {"turno" : 1, "girone":6, "nome":"triangolo-doc-n-6", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[107] = {"turno" : 1, "girone":7, "nome":"triangolo-doc-n-7", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[108] = {"turno" : 1, "girone":8, "nome":"triangolo-doc-n-8", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[109] = {"turno" : 1, "girone":9, "nome":"triangolo-doc-n-9", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[110] = {"turno" : 1, "girone":10, "nome":"triangolo-doc-n-10", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[111] = {"turno" : 1, "girone":11, "nome":"triangolo-doc-n-11", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[112] = {"turno" : 1, "girone":12, "nome":"triangolo-doc-n-12", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-15", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 /**/
 
 //ELO DI INIZIO TORNEO
@@ -56,7 +56,7 @@ matchs[111].elo["themoonlightknight"] = 1409;
 matchs[112].elo["maehard"] = 1868;
 matchs[112].elo["pantheon-67"] = 1693;
 matchs[112].elo["kaspdotcom"] = 1166;
-matchs[113].elo["Abatichs"] = 1243;
+matchs[113].elo["abatichs"] = 1243;
 matchs[113].elo["Warnefrit"] = 1136;
 matchs[113].elo["sundancek"] = 1365;
 
@@ -338,15 +338,34 @@ function stampaTurno(myMatch, iMatch, tabella, username)
    
     if (myMatch.partiteTerminate == 6) {
         if (myMatch.giocatori[username].posizioneGruppo == 1) 
+        {
             semaforo =  'verde.png';
-        else
-            semaforo =  'rosso.png';
+            myMatch.risolto = true;
+        }
     } else {
         //Torneo in corso
-        if (myMatch.giocatori[username].punti > 3) semaforo =  'verde.png';
-        if (myMatch.giocatori[username].posizioneGruppo == 1 && myMatch.giocatori[username].punti > myMatch.punti2 + 4 - myMatch.partite2 ) semaforo =  'verde.png';
-        if (myMatch.giocatori[username].posizioneGruppo != 1 && myMatch.giocatori[username].punti + 4 - myMatch.giocatori[username].partiteTerminate < myMatch.punti1 ) semaforo =  'rosso.png';
+        if (myMatch.giocatori[username].punti > 3) 
+        {
+            semaforo =  'verde.png';
+            myMatch.risolto = true;
+        }
+        if (myMatch.giocatori[username].posizioneGruppo == 1 && myMatch.giocatori[username].punti > myMatch.punti2 + 4 - myMatch.partite2 ) 
+        {
+            semaforo =  'verde.png';
+            myMatch.risolto = true;
+        }
     }
+
+    //Forzature
+    if (myMatch.turno == 1 && myMatch.girone == 5 && username == "plasol")
+    {
+        semaforo =  'verde.png';
+        myMatch.risolto = true;
+    }    
+    
+    //Se ho un verde tutti gli altri sono rossi
+    if (myMatch.risolto && myMatch.giocatori[username].posizioneGruppo != 1)
+        semaforo =  'rosso.png';
 
     //Se ho un qualificato visualizzo check
     if (semaforo == 'verde.png')
