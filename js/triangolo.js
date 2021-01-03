@@ -17,7 +17,6 @@ matchs[113] = {"turno" : 1, "girone":13, "nome":"triangolo-doc-n-13", "elo" : []
 matchs[114] = {"turno" : 1, "girone":14, "nome":"triangolo-doc-n-14", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-15", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 
-
 matchs[201] = {"turno" : 2, "girone":1, "nome":"triangolo-doc-n-21", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[202] = {"turno" : 2, "girone":2, "nome":"triangolo-doc-n-22", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[203] = {"turno" : 2, "girone":3, "nome":"triangolo-doc-n-23", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
@@ -66,9 +65,9 @@ matchs[113].elo["Warnefrit"] = 1136;
 matchs[113].elo["sundancek"] = 1365;
 
 //Secondo turno
-/*matchs[113].elo["ytoong"] = 1540;
-matchs[113].elo["babilonia"] = 1410;
-matchs[113].elo[""] = 0;
+matchs[201].elo["ytoong"] = 1547;
+matchs[201].elo["babilonia"] = 1421;
+matchs[201].elo["sundancek"] = 1347;
 /**/
 
 
