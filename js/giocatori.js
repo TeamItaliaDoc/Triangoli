@@ -4,6 +4,7 @@
 //         la funziona di stampa classifica deve essere riportata nel js che lo lancia
 
 var getEloRun = false;
+var calcolaPunteggioRun = false;
 var calcolaClassificaGiocatoriRun = false;
 
 var giocatori = [];
@@ -82,8 +83,14 @@ function getElo()
     }    
 
     //Se non c'è nessun elo da cercare calcolo il punteggio
-    if (! cercaElo)
+    console.log('cercaElo: ' + cercaElo);
+    console.log('calcolaPunteggioRun: ' + calcolaPunteggioRun);
+    if (! cercaElo && ! calcolaPunteggioRun)
+    {
+        calcolaPunteggioRun = true;
+
         calcolaPunteggio();
+    }
 }
 
 function getEloUrl(url)
@@ -109,7 +116,12 @@ function getEloUrl(url)
         //    calcolaClassificaGiocatoriRun = true;
 
         //Calcolo e stampo clasifica
-        calcolaPunteggio();
+        console.log('calcolaPunteggioRun (1): ' + calcolaPunteggioRun);
+        if (! calcolaPunteggioRun)
+        {
+            calcolaPunteggioRun = true;
+            calcolaPunteggio();
+        }
 
     }).error(function(jqXhr, textStatus, error) {
         //è andato in errore ricarico i dati

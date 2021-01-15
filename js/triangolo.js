@@ -20,6 +20,7 @@ matchs[115] = {"turno" : 1, "girone":15, "nome":"triangolo-doc-n-15", "elo" : []
 matchs[201] = {"turno" : 2, "girone":1, "nome":"triangolo-doc-n-21", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[202] = {"turno" : 2, "girone":2, "nome":"triangolo-doc-n-22", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[203] = {"turno" : 2, "girone":3, "nome":"triangolo-doc-n-23", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+matchs[204] = {"turno" : 2, "girone":4, "nome":"triangolo-doc-n-24", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 /**/
 
 //ELO DI INIZIO TORNEO
@@ -63,11 +64,20 @@ matchs[112].elo["kaspdotcom"] = 1166;
 matchs[113].elo["abatichs"] = 1243;
 matchs[113].elo["Warnefrit"] = 1136;
 matchs[113].elo["sundancek"] = 1365;
-
+matchs[114].elo["kaspdotcom"] = 1149;
+matchs[114].elo["giampiero111"] = 1428;
+matchs[114].elo["verolev"] = 1785;
 //Secondo turno
 matchs[201].elo["ytoong"] = 1547;
 matchs[201].elo["babilonia"] = 1421;
 matchs[201].elo["sundancek"] = 1347;
+matchs[202].elo["plasol"] = 1752;
+matchs[202].elo["tarlato"] = 1535;
+matchs[202].elo["rothmoni"] = 1339;
+matchs[203].elo["maehard"] = 1946;
+matchs[203].elo["michaelgallo"] = 1629;
+matchs[203].elo["gfiorito85"] = 1608;
+
 /**/
 
 
@@ -206,13 +216,16 @@ function calcolaPunteggio()
     }
 
     //Calcola classifica per turno
+    console.log('Lancio calcolaPunteggioTurno');
     calcolaPunteggioTurno($("#turno3"), '3');
     calcolaPunteggioTurno($("#turno2"), '2');
     calcolaPunteggioTurno($("#turno1"), '1');
  }
+
 function calcolaPunteggioTurno(tabella, turno)
 {   
 
+    console.log('Inizio calcolaPunteggioTurno ' + turno);
     for (var iMatch in matchs) {
         
         var username = '';
