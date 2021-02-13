@@ -1,6 +1,8 @@
 ﻿var calcolaClassificaRun = false;
 
 var matchs = [];
+matchs[301] = {"turno" : 3, "girone":1, "nome":"triangolo-doc-n-31", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+
 matchs[101] = {"turno" : 1, "girone":1, "nome":"triangolo-doc-n-1", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false};
 matchs[102] = {"turno" : 1, "girone":2, "nome":"triangolo-doc-n-2", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[103] = {"turno" : 1, "girone":3, "nome":"triangolo-doc-n-3", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
@@ -21,6 +23,8 @@ matchs[201] = {"turno" : 2, "girone":1, "nome":"triangolo-doc-n-21", "elo" : [],
 matchs[202] = {"turno" : 2, "girone":2, "nome":"triangolo-doc-n-22", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[203] = {"turno" : 2, "girone":3, "nome":"triangolo-doc-n-23", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
 matchs[204] = {"turno" : 2, "girone":4, "nome":"triangolo-doc-n-24", "elo" : [], "iniziato":false, "daCaricare":true, "giocatori" : {}, "stampaPosizione" : 0, "ultimo":0, "partiteTerminate":0, "risolto" : false };
+
+
 /**/
 
 //ELO DI INIZIO TORNEO
@@ -78,6 +82,11 @@ matchs[203].elo["maehard"] = 1946;
 matchs[203].elo["michaelgallo"] = 1629;
 matchs[203].elo["gfiorito85"] = 1608;
 
+
+//Terzo turno
+matchs[301].elo["babilonia"] = 1395;
+matchs[301].elo["gfiorito85"] = 1656;
+matchs[301].elo["plasol"] = 1786;
 /**/
 
 
